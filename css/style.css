@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 22px;
+    color: #B6B6B6;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* header */
+
+.header,main,footer {
+    width: 1300px;
+    margin: 0 auto; 
+}
+
+.header {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #95e1d3;
+}
+
+
+
+.menu-item {
+    margin-left: 55px;
+}
+
+
+.menu-link {
+    color: #95e1d3;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+.menu-link:hover {
+    color:  #F38181;
+}
+
+
+
+.menu-item:hover {
+    border-bottom: 2px solid #F38181;
+}
+
+
+/* .main {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 550px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+} */
+
+/* p {
+    font-size: 24px;
+    margin-left: 580px;
+    margin-top: 70px;
+    color: #333333;
+    font-family: 'Kaushan Script', cursive;
+}
+.img {
+    color: #B6B6B6;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+}
+
+
+li {
+    padding: 0;
+    margin-left: 45px;
+    font-family: 'Roboto', sans-serif;
+    color: #B6B6B6;
+}
+
+.li-2 {
+    margin-left: 480px;
+    color: #B6B6B6;
+}
+
+.li-3 {
+    margin-left: 800px;
+    color: #B6B6B6;
+}
+
+.li-4 {
+    color: #B6B6B6;
+}
+
+.li-5 {
+    margin-left: 480px;
+    color: #B6B6B6;
+}
+
+.li-6 {
+    margin-left: 800px;
+    color: #B6B6B6;
+}
+
+ */
+
+
+
+ /* services */
+ 
+
+ .uptitle {
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    line-height: 35px;
+    color: #333333;
+    
+ }
+
+.section-title {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+hr {
+    display: inline-block;
+    width: 60px;
+    height: 4px;
+    background: #F38181;
+    border: none;
+}
+.services-list {
+    flex-wrap: wrap;
+    margin-top: 65px;
+}
+
+
+.service-item {
+    width: 33.33%;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 35px;
+    margin-bottom: 100px;
+} 
+.services {
+    padding-top: 48px;
+}
+
+
+
+.service-item h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333333;
+    
+}
+
+.service-item img {
+    margin-right: 19px;
+}
+
+.service-item p {
+    color: #B6B6B6;
+}
+
+
+/* team */
+
+
+.subtitle {
+    margin-top: 45px;
+}
+
+
+.member-list {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.member-item h3 {
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 30px;
+    margin-bottom: 11px;
+}
+
+.member-photo img {
+    width: 100%;
+    display: block;
+   
+}
+.member-photo {
+    position:  relative;
+}
+
+.member-photo::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(239, 139, 138, 0.8) 0%, rgba(229, 207, 130, 0.8) 100%);
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    opacity: 0;
+   transition: opacity 1s ;
+}
+
+.member-photo:hover::before,
+.memder-photo:hover .social{
+    opacity: 1  ;
+
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+   transition: opacity 1s ;
+}
+
+.social li {
+    width: 57px;
+    height: 57px;
+    background: #FCE38A;
+    margin-right: 1px;
+
+}
+.social li :hover {
+    background: #95E1D3;
+}
+
+.social-link {
+    display: block;
+    padding: 16px 0;
+}
+
+
+.social-link img {
+    height: 25px;
+}
+
+
+
+.social-reg p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.social-reg hr {
+    width: 1200px;
+    margin-bottom: 40px;
+    color: #333333;
+}
